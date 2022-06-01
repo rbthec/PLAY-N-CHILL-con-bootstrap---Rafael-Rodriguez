@@ -1,0 +1,310 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(182, 255, 255);
+}
+
+header{
+    background-color: rgb(52, 160, 255);
+    width: 100%;
+    clear: both;
+    content: " ";
+    display: table;
+}
+
+h1{
+    font-family: 'Anton', sans-serif;
+    margin: 0;
+    padding: 10px 35px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    font-size: 4em;
+    transition: all 2s ease;
+}
+
+h1:hover{
+    transform: skew(10deg);
+    border-radius: 0%;
+}
+
+/*Le agregue transciciones,transforrmaciones al logo principal de la pagina, se aplico en todos los archivos css.*/
+
+.menu{
+   margin: auto;
+   padding: 0%;
+   width: 90%;
+   max-width: 1000px; 
+   font-family: 'Roboto Flex', sans-serif;
+     
+}
+
+.menu ul li{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    list-style: none;
+    margin-left: 25px;
+    padding: 20px 0px;
+    font-weight: bold;
+    float: right;
+    display: block; 
+    
+}
+
+.menu li:hover{
+    background: #00ffff;
+}
+
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+
+
+.contenedorp{
+    display: grid;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    grid-template-columns: 2fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+    text-align: center;
+    align-items: center;
+    grid-template-areas: 
+    "letras-1"
+    "letras-2"
+    "letras-3"
+    "letras-4"
+    "letras-5"
+    "img-1"
+    "img-2"
+    "img-3"
+    "img-4"
+    "img-5"
+    
+    ;
+}
+
+
+/*Le agregue transciciones,transforrmaciones y una gradiente, a todos mis contenedores #letras para las definicioones de cada juego y consola, se aplico en todos los archivos css.*/
+
+#letras{
+    border: 3px rgb(0, 30, 255) solid;
+    transition: all 2s ease;
+    height: auto;
+
+}
+
+
+
+#letras:hover{
+    background-color:rgb(52, 160, 255); 
+    transform: skew(10deg);
+    border-radius: 0%;
+}
+
+
+
+.letras-1{
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 30px;
+    width: 500px;
+    height: 350px;
+    background-color:rgb(52, 160, 255); 
+    border: 3px solid black;
+    grid-area: letras-1;
+   
+    
+    
+}
+
+
+.img-1{
+   border: 15px solid rgb(52, 160, 255);
+   background: radial-gradient( rgb(255, 255, 255), rgb(52, 160, 255) ,rgb(42, 59, 255) );
+   grid-area: img-1;
+   width: 600px;
+   height: 380px;
+   padding-left: 7px;
+   padding-top:40px;
+}
+
+
+.letras-2{
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 20px;
+    width: 550px;
+    height: 250px;
+    grid-area: letras-2;
+    border: 3px black solid;
+    margin-top: 70px;
+    
+}
+
+.img-2{
+    margin-top: 50px;
+    margin-left: 30px;
+    border: 20px solid rgb(52, 160, 255);
+   background-color:rgb(52, 160, 255); 
+   grid-area: img-2;
+   width: 500px;
+   height: 310px;
+   padding-left: 10px;
+   padding-top: 5px;
+    
+}
+
+
+
+.letras-3{
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 20px;
+    width: 560px;
+    height: 250px;
+    grid-area: letras-3;
+    border: 3px black solid;
+    margin-top: 20px;
+    
+}
+
+.img-3{
+    border: 20px solid rgb(52, 160, 255);
+    background-color:rgb(52, 160, 255); 
+    grid-area: img-3;
+    width: 500px;
+    height: 310px;
+    padding-left: 5px;
+    margin-left: 30px;
+    padding-top: 5px;
+
+}
+
+.letras-4{
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 20px;
+    width: 550px;
+    height: 250px;
+    grid-area: letras-4;
+    border: 3px black solid;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.img-4{
+    border: 20px solid rgb(52, 160, 255);
+    background-color:rgb(52, 160, 255); 
+    height: 500px;
+    grid-area: img-4;
+    width: 450px;
+    height: 360px;
+    padding-top: 3px;
+    padding-left: 10px;
+    margin-left: 40px;
+     
+    
+}
+
+.letras-5{
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 20px;
+    width: 500px;
+    height: 250px;
+    grid-area: letras-5;
+    border: 3px black solid;
+    margin-top: 50px;
+
+}
+
+.img-5{
+    border: 20px solid rgb(52, 160, 255);
+    background-color:rgb(52, 160, 255); 
+    grid-area: img-5;
+    width: 500px;
+    height: 300px;
+    padding-left: 10px;
+    margin-left: 50px;
+    margin-top: 30px;
+    
+}
+
+h5{
+    font-family: 'Roboto Flex', sans-serif;
+    margin-left: 600px;
+}
+
+.descarga{
+    margin-top: 30px;
+    text-align: center;
+}
+
+footer{
+    font-family: 'Roboto Flex', sans-serif;
+    margin-left: 700px;
+    padding-bottom: 20px;
+    color: rgb(52, 160, 255);
+}
+
+
+/*Media queries donde aplico la adptabilidad para pantallas de 600px y le doy una aperiencia diferente a la pagina cuando esta en modo mobile*/
+ 
+
+@media only screen and (max-width: 600px){
+
+    header{
+        background-color:rgb(0, 255, 89);
+        width: 100%;
+        clear: both;
+        content: " ";
+        display: table;
+    }
+
+    .menu li:hover{
+        background: #fffb00;
+    }
+    
+  .contenedorp{
+      gap: 20px;
+  }  
+    
+ #letras{
+     width: 300px;
+     height: auto;
+     font-size: 22px;
+     border: 3px rgb(0, 255, 89) solid;
+     background-color:rgb(0, 255, 89);
+    
+ }
+ 
+    #img{
+     width: 400px;
+     height: auto;
+     border:  10px rgb(0, 255, 89) solid;
+     background-color:rgb(0, 255, 89);
+  }
+  h5{
+    font-family: 'Roboto Flex', sans-serif;
+    margin-left: 0px;
+    text-align: center;
+    color:rgb(0, 158, 55) ;
+}
+
+footer{
+    font-family: 'Roboto Flex', sans-serif;
+    margin-left: 0px;
+    padding-bottom: 20px;
+    text-align: center;
+    color:rgb(0, 158, 55) ;
+}
+
+
+ 
+
+
+}

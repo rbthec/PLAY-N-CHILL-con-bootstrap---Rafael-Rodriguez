@@ -1,0 +1,190 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0;
+}
+
+body{
+background-image: url(./imagenes/playing\ games\ pc.jpg);
+background-position: center;
+background-repeat: no-repeat ;
+background-attachment: fixed;
+background-size: 1600px;
+}
+
+.contenedorp{
+    display: grid;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    grid-template-columns: 2fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 40px;
+    margin-top: 25px;
+    text-align: center;
+    align-items: center;
+    grid-template-areas: 
+    "letras-tabla"
+    "form"
+    "location"
+    }
+
+header{
+    background-color: rgb(52, 160, 255);
+    width: 100%;
+    clear: both;
+    content: " ";
+    display: table;
+}
+
+h1{
+    font-family: 'Anton', sans-serif;
+    margin: 0;
+    padding: 10px 35px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    font-size: 4em;
+    transition: all 2s ease;
+}
+
+h1:hover{
+    transform: skew(10deg);
+    border-radius: 0%;
+}
+
+
+.menu{
+   margin: auto;
+   padding: 0%;
+   width: 90%;
+   max-width: 1000px; 
+   font-family: 'Roboto Flex', sans-serif;
+     
+}
+
+.menu ul li{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    list-style: none;
+    margin-left: 25px;
+    padding: 20px 0px;
+    font-weight: bold;
+    float: right;
+    display: block; 
+    
+}
+
+.menu li:hover{
+    background: #00ffff;
+}
+
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+
+.letras-tabla{
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 17px;
+    font-style: bold;
+    width: 750px;
+    height: auto;
+    margin-left: 30px;
+    margin-right: 60px;
+    margin-top: 30px;
+    padding: 12px;
+    background-color:rgb(52, 160, 255); 
+    color: black;
+    border: 3px solid black;
+    grid-area: letras-tabla;
+}
+
+.table{
+    border: 3px black solid;
+}
+
+.form{
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 20px;
+    font-style: bold;
+    width: 500px;
+    height: auto;
+    margin-left: 30px;
+    margin-right: 60px;
+    margin-top: 10px;
+    padding: 12px;
+    background-color:rgb(52, 160, 255); 
+    border: 3px solid black;
+    grid-area: form;
+}
+
+
+.location{
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 20px;
+    font-style: bold;
+    width: 500px;
+    height: auto;
+    margin-left: 30px;
+    margin-right: 60px;
+    margin-top: 10px;
+    padding: 12px;
+    background-color:rgb(52, 160, 255); 
+    border: 3px solid black;
+    grid-area: location;
+
+}
+
+h4{
+    color: black;
+}
+
+footer{
+    font-family: 'Roboto Flex', sans-serif;
+    margin-left: 1400px;
+    padding-bottom: 20px;
+    color: rgb(52, 160, 255);
+}
+
+@media only screen and (max-width: 600px){
+
+    header{
+        background-color:rgb(0, 255, 89);
+        width: 100%;
+        clear: both;
+        content: " ";
+        display: table;
+    }
+
+    .menu li:hover{
+        background: #fffb00;
+    }
+    
+  .contenedorp{
+      gap: 20px;
+  }  
+    
+  #cajas{
+      background-color:rgb(0, 255, 89);
+  }
+
+  h4{
+    font-family: 'Roboto Flex', sans-serif;
+    margin-left: 0px;
+    text-align: center;
+    color:rgb(0, 158, 55) ;
+}
+
+footer{
+    font-family: 'Roboto Flex', sans-serif;
+    margin-left: 0px;
+    padding-bottom: 20px;
+    text-align: center;
+    color:rgb(0, 158, 55) ;
+}
+
+
+ 
+
+
+}
